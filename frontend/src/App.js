@@ -9,6 +9,7 @@ import { About } from "@/components/site/About";
 import { Manifesto } from "@/components/site/Manifesto";
 import { Quiz } from "@/components/site/Quiz";
 import { Plantao } from "@/components/site/Plantao";
+import { Especialidades } from "@/components/site/Especialidades";
 import { Testimonials } from "@/components/site/Testimonials";
 import { Contact } from "@/components/site/Contact";
 import { Footer } from "@/components/site/Footer";
@@ -49,6 +50,7 @@ function App() {
                 <Plantao />
                 <About />
                 <Manifesto />
+                <Especialidades />
                 <Quiz />
                 <Testimonials />
                 <Contact />

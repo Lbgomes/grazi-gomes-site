@@ -39,9 +39,13 @@ export const About = () => {
                     <Reveal delay={0.15}>
                         <div className="space-y-5 text-[#A1A1AA] leading-relaxed text-base">
                             <p>
-                                Grazi combina a precisão cirúrgica da <strong className="text-[#F2F2F2]">Terapia Cognitivo-Comportamental</strong> com
-                                a ousadia da <strong className="text-[#F2F2F2]">Psicologia Provocativa</strong>: duas abordagens que, juntas,
-                                não deixam você se esconder atrás das próprias desculpas.
+                                Grazi combina a precisão da <strong className="text-[#F2F2F2]">Terapia Cognitivo-Comportamental</strong> com
+                                a sensibilidade da <strong className="text-[#F2F2F2]">Psicologia Provocativa</strong>: duas abordagens que, juntas,
+                                trazem clareza e movimento para quem se sente estagnado.
+                            </p>
+                            <p>
+                                É também <strong className="text-[#F2F2F2]">sexóloga e terapeuta de casais</strong> — porque a vida afetiva
+                                e a intimidade merecem o mesmo cuidado técnico e o mesmo espaço de escuta sem julgamentos.
                             </p>
                             <p>
                                 Aqui você encontra escuta verdadeira, perguntas certeiras na medida certa e um plano

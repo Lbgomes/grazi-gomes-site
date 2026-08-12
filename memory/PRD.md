@@ -30,6 +30,11 @@ Escolhas do usuário: todas as seções principais; agendamento por formulário 
 - Adicionada seção Plantão Psicológico em destaque após o hero + link no menu + selo no hero e no contato
 - Tom de humor suavizado em todo o site (resultados do quiz, depoimentos, manifesto, formulário) mantendo o design
 
+## Ajustes (12/08/2026 — 3ª iteração)
+- Adicionadas especialidades: Sexologia e Terapia de Casais
+- Nova seção "Áreas de atendimento" (Terapia Individual, Terapia de Casais, Sexologia) após o Manifesto + link no menu
+- Hero, Sobre, rodapé e meta description atualizados com as novas especialidades
+
 ## Pendências / Backlog
 - P0: Substituir número de WhatsApp placeholder (5511999999999) em src/components/site/config.js pelo número real da Grazi
 - P0: Substituir foto retrato de stock por foto real da Grazi

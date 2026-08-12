@@ -1,0 +1,73 @@
+import { useRef } from "react";
+import { motion, useScroll, useTransform } from "framer-motion";
+import { Reveal, Overline } from "./Reveal";
+
+const PORTRAIT =
+    "https://images.unsplash.com/photo-1636208640803-6a443f9676d4?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2NzV8MHwxfHNlYXJjaHw0fHxzb3BoaXN0aWNhdGVkJTIwd29tYW4lMjBwb3J0cmFpdCUyMGRhcmslMjBtb29keXxlbnwwfHx8fDE3ODY1NDg4Mzh8MA&ixlib=rb-4.1.0&q=85";
+
+export const About = () => {
+    const ref = useRef(null);
+    const { scrollYProgress } = useScroll({ target: ref, offset: ["start end", "end start"] });
+    const imgY = useTransform(scrollYProgress, [0, 1], ["-8%", "8%"]);
+
+    return (
+        <section id="sobre" ref={ref} data-testid="about-section" className="relative py-28 md:py-40">
+            <div className="max-w-7xl mx-auto px-6 md:px-12 grid grid-cols-1 md:grid-cols-12 gap-12 md:gap-16 items-center">
+                <div className="md:col-span-5 relative">
+                    <div className="overflow-hidden border border-[#27272A]/60">
+                        <motion.img
+                            style={{ y: imgY }}
+                            src={PORTRAIT}
+                            alt="Retrato da psicóloga Grazi Gomes"
+                            data-testid="about-portrait"
+                            className="w-full h-[520px] object-cover grayscale hover:grayscale-0 hover:scale-105 transition-[filter,transform] duration-700 scale-110"
+                        />
+                    </div>
+                    <div className="absolute -bottom-6 -right-4 md:-right-8 bg-[#E35A3D] text-[#0A0A0C] px-6 py-4 font-mono-accent text-[11px] uppercase tracking-[0.2em]">
+                        CRP ativo · Sem julgamentos (quase)
+                    </div>
+                </div>
+
+                <div className="md:col-span-6 md:col-start-7">
+                    <Reveal>
+                        <Overline className="mb-6">Quem é Grazi Gomes</Overline>
+                        <h2 className="font-serif-display font-bold text-3xl md:text-5xl tracking-tighter leading-tight mb-8">
+                            A psicóloga que não vai passar a mão na sua cabeça.
+                            <span className="italic text-[#E35A3D]"> Vai mostrar onde ela dói.</span>
+                        </h2>
+                    </Reveal>
+                    <Reveal delay={0.15}>
+                        <div className="space-y-5 text-[#A1A1AA] leading-relaxed text-base">
+                            <p>
+                                Grazi combina a precisão cirúrgica da <strong className="text-[#F2F2F2]">Terapia Cognitivo-Comportamental</strong> com
+                                a ousadia da <strong className="text-[#F2F2F2]">Psicologia Provocativa</strong>: duas abordagens que, juntas,
+                                não deixam você se esconder atrás das próprias desculpas.
+                            </p>
+                            <p>
+                                Aqui não tem "hmm, entendo" infinito. Tem pergunta incômoda na medida certa, humor quando você
+                                menos espera e um plano concreto para você sair da sessão diferente de como entrou.
+                            </p>
+                            <p className="font-serif-display italic text-xl text-[#F2F2F2]">
+                                "Meu trabalho não é te deixar confortável. É te deixar livre."
+                            </p>
+                        </div>
+                    </Reveal>
+                    <Reveal delay={0.3}>
+                        <div className="mt-10 grid grid-cols-3 gap-6 border-t border-[#27272A]/60 pt-8">
+                            {[
+                                ["10+", "anos de prática"],
+                                ["2", "abordagens afiadas"],
+                                ["0", "paciência p/ desculpa"],
+                            ].map(([num, label]) => (
+                                <div key={label}>
+                                    <p className="font-serif-display font-black text-3xl md:text-4xl text-[#E35A3D]">{num}</p>
+                                    <p className="font-mono-accent text-[10px] uppercase tracking-[0.2em] text-[#A1A1AA] mt-2">{label}</p>
+                                </div>
+                            ))}
+                        </div>
+                    </Reveal>
+                </div>
+            </div>
+        </section>
+    );
+};

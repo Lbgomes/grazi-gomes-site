@@ -30,6 +30,10 @@ export const Especialidades = () => (
                 <h2 className="font-serif-display font-bold text-3xl md:text-5xl tracking-tighter leading-tight">
                     Para você, para o casal e para <span className="italic text-[#E35A3D]">a intimidade</span>
                 </h2>
+                <p className="text-[#A1A1AA] leading-relaxed mt-8">
+                    Especializações em Terapia Cognitivo-Comportamental, Sexologia Clínica e Terapia de Casais — formação no Brasil,
+                    pós-graduação em Portugal e membership na British Psychological Society (BPS), Londres.
+                </p>
             </Reveal>
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12">

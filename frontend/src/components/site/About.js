@@ -24,7 +24,7 @@ export const About = () => {
                         />
                     </div>
                     <div className="absolute -bottom-6 -right-4 md:-right-8 bg-[#E35A3D] text-[#0A0A0C] px-6 py-4 font-mono-accent text-[11px] uppercase tracking-[0.2em]">
-                        CRP ativo · Plantão psicológico
+                        CRP Brasil · BPS Londres
                     </div>
                 </div>
 
@@ -48,6 +48,11 @@ export const About = () => {
                                 e a intimidade merecem o mesmo cuidado técnico e o mesmo espaço de escuta sem julgamentos.
                             </p>
                             <p>
+                                Formada no Brasil e <strong className="text-[#F2F2F2]">pós-graduada em Portugal</strong>, com registro
+                                ativo no <strong className="text-[#F2F2F2]">CRP</strong> e membership na
+                                <strong className="text-[#F2F2F2]"> British Psychological Society (BPS), em Londres</strong>.
+                            </p>
+                            <p>
                                 Aqui você encontra escuta verdadeira, perguntas certeiras na medida certa e um plano
                                 concreto para sair de cada sessão diferente de como entrou.
                             </p>
@@ -59,9 +64,9 @@ export const About = () => {
                     <Reveal delay={0.3}>
                         <div className="mt-10 grid grid-cols-3 gap-6 border-t border-[#27272A]/60 pt-8">
                             {[
-                                ["10+", "anos de prática"],
-                                ["2", "abordagens integradas"],
-                                ["24h", "plantão psicológico"],
+                                ["CRP", "registro ativo · Brasil"],
+                                ["BPS", "membro · Londres"],
+                                ["PT", "pós-graduação · Portugal"],
                             ].map(([num, label]) => (
                                 <div key={label}>
                                     <p className="font-serif-display font-black text-3xl md:text-4xl text-[#E35A3D]">{num}</p>

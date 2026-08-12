@@ -39,7 +39,7 @@ export const Hero = () => {
                     className="font-mono-accent text-xs uppercase tracking-[0.2em] text-[#E35A3D] mb-10"
                     data-testid="hero-overline"
                 >
-                    Grazi Gomes — Psicóloga · TCC · Sexologia · Terapia de Casais
+                    Grazi Gomes — Psicóloga Clínica · CRP Brasil · BPS Londres
                 </motion.p>
 
                 <h1 className="font-serif-display font-black text-4xl sm:text-6xl lg:text-7xl xl:text-8xl leading-[1.02] tracking-tighter max-w-5xl">
@@ -77,19 +77,9 @@ export const Hero = () => {
                         data-testid="hero-quiz-link"
                         className="text-[#A1A1AA] hover:text-[#F2F2F2] transition-colors duration-300 text-base border-b border-[#27272A] hover:border-[#E35A3D] pb-1"
                     >
-                        Ainda em dúvida? Faça o teste ↓
+                        Conheça a autoavaliação ↓
                     </a>
                 </motion.div>
-
-                <motion.p
-                    initial={{ opacity: 0 }}
-                    animate={{ opacity: 1 }}
-                    transition={{ delay: 1.8, duration: 0.8 }}
-                    className="mt-10 font-mono-accent text-[11px] uppercase tracking-[0.2em] text-[#A1A1AA]"
-                    data-testid="hero-plantao-note"
-                >
-                    <span className="text-[#E35A3D]">Plantão psicológico</span> · atendimento em até 24h
-                </motion.p>
             </motion.div>
 
             <motion.div

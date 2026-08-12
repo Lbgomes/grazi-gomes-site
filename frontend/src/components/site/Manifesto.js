@@ -6,13 +6,13 @@ const CHAIR =
 const chapters = [
     {
         n: "01",
-        title: "TCC: o raio-X da sua cabeça",
-        text: "A Terapia Cognitivo-Comportamental identifica os pensamentos automáticos que sabotam você ('ninguém gosta de mim', 'vai dar errado') e os substitui por versões que passam no teste da realidade. Ciência, não achismo.",
+        title: "TCC: base científica do processo",
+        text: "A Terapia Cognitivo-Comportamental é uma das abordagens com maior evidência científica no mundo. Ela identifica padrões de pensamento que geram sofrimento e os trabalha de forma estruturada, com objetivos claros e mensuráveis.",
     },
     {
         n: "02",
-        title: "Provocação: o empurrão que você pediu sem saber",
-        text: "A Psicologia Provocativa usa humor e paradoxo para tirar você do papel de vítima. Você vai rir do seu próprio drama — e, ao rir, perceber que ele não era tão sério assim.",
+        title: "Psicologia Provocativa: leveza com propósito",
+        text: "Desenvolvida na Europa, a Psicologia Provocativa utiliza o humor e o paradoxo como ferramentas técnicas para ampliar a consciência e mobilizar recursos internos — sempre com ética, respeito e acolhimento.",
     },
     {
         n: "03",
@@ -32,7 +32,7 @@ export const Manifesto = () => (
             <Reveal className="mb-20 md:mb-28 max-w-3xl">
                 <Overline className="mb-6">O método em 4 capítulos</Overline>
                 <h2 className="font-serif-display font-bold text-3xl md:text-5xl tracking-tighter leading-tight">
-                    Como funciona terapia que <span className="italic text-[#E35A3D]">provoca</span> de propósito
+                    Abordagens com <span className="italic text-[#E35A3D]">base científica</span> e profundidade clínica
                 </h2>
             </Reveal>
 

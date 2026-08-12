@@ -7,7 +7,7 @@ const links = [
     { label: "Sobre", href: "#sobre" },
     { label: "Manifesto", href: "#manifesto" },
     { label: "Atendimentos", href: "#atendimentos" },
-    { label: "O Teste", href: "#teste" },
+    { label: "Autoavaliação", href: "#teste" },
     { label: "Depoimentos", href: "#depoimentos" },
 ];
 
@@ -48,7 +48,7 @@ export const Navbar = () => {
                     ))}
                 </div>
                 <a
-                    href={whatsappLink("Oi, Grazi. Li seu site e acho que preciso de terapia (o teste confirmou).")}
+                    href={whatsappLink("Oi, Grazi. Conheci seu site e gostaria de agendar uma consulta.")}
                     target="_blank"
                     rel="noopener noreferrer"
                     data-testid="nav-cta-button"

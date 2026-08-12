@@ -35,6 +35,12 @@ Escolhas do usuário: todas as seções principais; agendamento por formulário 
 - Nova seção "Áreas de atendimento" (Terapia Individual, Terapia de Casais, Sexologia) após o Manifesto + link no menu
 - Hero, Sobre, rodapé e meta description atualizados com as novas especialidades
 
+## Ajustes (12/08/2026 — 4ª iteração — tom profissional)
+- Credenciais oficiais em todo o site: formada no Brasil, pós-graduada em Portugal, CRP Brasil, BPS Londres (hero, Sobre, Atendimentos, rodapé, selo na foto)
+- Teste transformado em "Autoavaliação" com linguagem clínica profissional, perfis renomeados (esquiva emocional, ruminação, hipercuidado, autocobrança) e aviso de que não substitui avaliação clínica
+- Plantão Psicológico reduzido a uma faixa discreta (banner fino) após o hero; removido destaque do hero
+- Removida qualquer menção a "papel de vítima" e humor excessivo; Manifesto reescrito com foco em base científica
+
 ## Pendências / Backlog
 - P0: Substituir número de WhatsApp placeholder (5511999999999) em src/components/site/config.js pelo número real da Grazi
 - P0: Substituir foto retrato de stock por foto real da Grazi

@@ -6,59 +6,59 @@ import { whatsappLink } from "./config";
 
 const questions = [
     {
-        q: "Sexta à noite, planos cancelados. Sua reação:",
+        q: "Quando seus planos são cancelados de última hora, você costuma:",
         options: [
-            { t: "Alívio. Finalmente posso não falar com ninguém.", k: "foguete" },
-            { t: "Repasso mentalmente tudo que disse na semana. 47 vezes.", k: "mente" },
-            { t: "Ligo para alguém. Silêncio é suspeito.", k: "companhia" },
-            { t: "Abro o notebook. Produtividade não tira folga.", k: "controle" },
+            { t: "Sentir alívio por poder ficar sozinho(a)", k: "foguete" },
+            { t: "Repassar mentalmente as conversas da semana", k: "mente" },
+            { t: "Procurar companhia imediatamente", k: "companhia" },
+            { t: "Aproveitar para adiantar tarefas e compromissos", k: "controle" },
         ],
     },
     {
-        q: "Alguém te critica no trabalho. Você:",
+        q: "Diante de uma crítica, sua reação mais comum é:",
         options: [
-            { t: "Concordo na hora e sofro por 3 dias no chuveiro.", k: "companhia" },
-            { t: "Já tenho 14 respostas prontas. Nenhuma dita em voz alta.", k: "mente" },
-            { t: "Finjo que não ligo. Ligo.", k: "foguete" },
-            { t: "Analiso se a crítica procede. Sou assim com tudo. Exausto.", k: "controle" },
+            { t: "Concordar rapidamente e refletir sobre ela por dias", k: "companhia" },
+            { t: "Pensar em respostas que raramente diz em voz alta", k: "mente" },
+            { t: "Aparentar indiferença, mesmo quando isso te afeta", k: "foguete" },
+            { t: "Analisar racionalmente se a crítica é justa", k: "controle" },
         ],
     },
     {
-        q: "Sobre pedir ajuda:",
+        q: "Quando precisa de ajuda, você:",
         options: [
-            { t: "Eu que ajudo os outros. Sempre. E depois desabo.", k: "companhia" },
-            { t: "Ajuda? Eu nem sei explicar o que sinto.", k: "foguete" },
-            { t: "Já pensei. Mas 'não é pra tanto', né?", k: "mente" },
-            { t: "Eu resolvo sozinho(a). Sempre resolvi. Olha onde cheguei.", k: "controle" },
+            { t: "Costuma ser quem ajuda, raramente quem pede", k: "companhia" },
+            { t: "Tem dificuldade em nomear o que sente", k: "foguete" },
+            { t: "Pensa em procurar apoio, mas acaba adiando", k: "mente" },
+            { t: "Tenta resolver sozinho(a) antes de qualquer coisa", k: "controle" },
         ],
     },
     {
-        q: "Sua relação com a zona de conforto:",
+        q: "Sua relação com mudanças é:",
         options: [
-            { t: "Moro nela. IPTU pago, cortina nova.", k: "foguete" },
-            { t: "Saio dela na imaginação. Volto antes do jantar.", k: "mente" },
-            { t: "Saio quando alguém precisa de mim lá fora.", k: "companhia" },
-            { t: "Zona de conforto é ineficiente. Assim como essa pergunta.", k: "controle" },
+            { t: "Prefiro a estabilidade do que já conheço", k: "foguete" },
+            { t: "Imagino mudanças, mas raramente as inicio", k: "mente" },
+            { t: "Mudo quando as pessoas ao redor precisam", k: "companhia" },
+            { t: "Encaro mudanças como metas a cumprir", k: "controle" },
         ],
     },
 ];
 
 const results = {
     foguete: {
-        title: "O(a) Fugitivo(a) Profissional",
-        text: "Você transformou evitar sentimentos em esporte olímpico — medalha de ouro em mudar de assunto. A boa notícia: na terapia, fugir não funciona. A Grazi já viu todas as rotas de fuga. Inclusive essa que você está planejando agora.",
+        title: "Padrão de esquiva emocional",
+        text: "Você tende a evitar emoções difíceis para manter a rotina em funcionamento. Na terapia, esse padrão é trabalhado com técnicas de TCC, em um ritmo seguro e respeitoso, ampliando sua tolerância emocional e sua qualidade de vida.",
     },
     mente: {
-        title: "O(a) Diretor(a) de Cinema Mental",
-        text: "Sua cabeça produz temporadas inteiras de catástrofes que nunca estreiam. TCC foi literalmente inventada para você: vamos tirar esses roteiros do papel e exibir só o que é real.",
+        title: "Padrão de ruminação",
+        text: "Sua mente tende a repassar situações repetidamente, o que alimenta a ansiedade. A TCC oferece ferramentas com evidência científica para interromper esse ciclo e recuperar a presença no momento atual.",
     },
     companhia: {
-        title: "O(a) Bombeiro(a) Emocional",
-        text: "Você apaga o incêndio de todo mundo e volta para uma casa pegando fogo. Ser gentil é lindo; se abandonar é caro. Terapia é onde, finalmente, alguém pergunta: e você, como está de verdade?",
+        title: "Padrão de hipercuidado",
+        text: "Você prioriza as necessidades dos outros e deixa as suas para depois. O processo terapêutico ajuda a estabelecer limites saudáveis e a incluir você na própria lista de cuidados.",
     },
     controle: {
-        title: "O(a) CEO de Si Mesmo(a)",
-        text: "Planilhas, metas, performance — até para descansar você tem método. O problema: emoção não aceita KPI. Na terapia você vai aprender a desligar o modo 'gestão de crise' da própria vida.",
+        title: "Padrão de autocobrança",
+        text: "A exigência consigo mesmo(a) gera um desgaste constante. A terapia trabalha essas crenças de desempenho, construindo uma relação mais equilibrada e compassiva com você.",
     },
 };
 
@@ -88,12 +88,15 @@ export const Quiz = () => {
             <div className="max-w-7xl mx-auto px-6 md:px-12 grid grid-cols-1 md:grid-cols-12 gap-12">
                 <div className="md:col-span-4">
                     <Reveal>
-                        <Overline className="mb-6">Teste cientificamente provocativo</Overline>
+                        <Overline className="mb-6">Autoavaliação</Overline>
                         <h2 className="font-serif-display font-bold text-3xl md:text-5xl tracking-tighter leading-tight mb-6">
-                            Descubra <span className="italic text-[#E35A3D]">por que</span> você precisa de terapia
+                            Entenda o <span className="italic text-[#E35A3D]">momento</span> que você está vivendo
                         </h2>
                         <p className="text-[#A1A1AA] leading-relaxed">
-                            Quatro perguntas. Zero chance de sair ileso. O resultado é humor — mas o diagnóstico de que terapia faria bem? Esse é real.
+                            Quatro perguntas de reflexão, elaboradas a partir de padrões comuns na prática clínica, para ajudar você a identificar como a terapia pode contribuir neste momento.
+                        </p>
+                        <p className="mt-6 text-[#A1A1AA]/60 text-sm leading-relaxed">
+                            Esta autoavaliação é um exercício de reflexão e não substitui uma avaliação clínica.
                         </p>
                         <div className="mt-10 font-mono-accent text-xs uppercase tracking-[0.2em] text-[#A1A1AA]" data-testid="quiz-progress">
                             {done ? "Resultado" : `Pergunta ${step + 1} / ${questions.length}`}
@@ -147,7 +150,7 @@ export const Quiz = () => {
                                         <p className="text-[#A1A1AA] leading-relaxed mb-10 max-w-xl">{result.text}</p>
                                         <div className="mt-auto flex flex-col sm:flex-row gap-4">
                                             <a
-                                                href={whatsappLink(`Oi, Grazi. Fiz o teste do site e o resultado foi "${result.title}". Acho que precisamos conversar.`)}
+                                                href={whatsappLink(`Oi, Grazi. Fiz a autoavaliação no site e o resultado foi "${result.title}". Gostaria de conversar sobre uma consulta.`)}
                                                 target="_blank"
                                                 rel="noopener noreferrer"
                                                 data-testid="quiz-cta-button"
@@ -160,7 +163,7 @@ export const Quiz = () => {
                                                 data-testid="quiz-restart-button"
                                                 className="flex items-center justify-center gap-2 border border-[#27272A] px-8 py-4 rounded-full text-[#A1A1AA] hover:text-[#F2F2F2] hover:border-[#E35A3D] transition-[color,border-color] duration-300"
                                             >
-                                                <RotateCcw size={16} /> Refazer o teste
+                                                <RotateCcw size={16} /> Refazer a avaliação
                                             </button>
                                         </div>
                                     </motion.div>

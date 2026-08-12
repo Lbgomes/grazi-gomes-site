@@ -8,6 +8,7 @@ import { MarqueeStrip } from "@/components/site/MarqueeStrip";
 import { About } from "@/components/site/About";
 import { Manifesto } from "@/components/site/Manifesto";
 import { Quiz } from "@/components/site/Quiz";
+import { Plantao } from "@/components/site/Plantao";
 import { Testimonials } from "@/components/site/Testimonials";
 import { Contact } from "@/components/site/Contact";
 import { Footer } from "@/components/site/Footer";
@@ -45,6 +46,7 @@ function App() {
             <main>
                 <Hero />
                 <MarqueeStrip />
+                <Plantao />
                 <About />
                 <Manifesto />
                 <Quiz />

@@ -3,6 +3,7 @@ import { motion } from "framer-motion";
 import { whatsappLink } from "./config";
 
 const links = [
+    { label: "Plantão", href: "#plantao" },
     { label: "Sobre", href: "#sobre" },
     { label: "Manifesto", href: "#manifesto" },
     { label: "O Teste", href: "#teste" },

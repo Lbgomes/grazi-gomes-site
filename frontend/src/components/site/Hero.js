@@ -80,6 +80,16 @@ export const Hero = () => {
                         Ainda em dúvida? Faça o teste ↓
                     </a>
                 </motion.div>
+
+                <motion.p
+                    initial={{ opacity: 0 }}
+                    animate={{ opacity: 1 }}
+                    transition={{ delay: 1.8, duration: 0.8 }}
+                    className="mt-10 font-mono-accent text-[11px] uppercase tracking-[0.2em] text-[#A1A1AA]"
+                    data-testid="hero-plantao-note"
+                >
+                    <span className="text-[#E35A3D]">Plantão psicológico</span> · atendimento em até 24h
+                </motion.p>
             </motion.div>
 
             <motion.div

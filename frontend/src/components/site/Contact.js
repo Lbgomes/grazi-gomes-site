@@ -37,12 +37,12 @@ export const Contact = () => {
             <div className="max-w-7xl mx-auto px-6 md:px-12 grid grid-cols-1 md:grid-cols-12 gap-16">
                 <div className="md:col-span-5">
                     <Reveal>
-                        <Overline className="mb-6">Última chamada</Overline>
+                        <Overline className="mb-6">Agende sua sessão</Overline>
                         <h2 className="font-serif-display font-black text-4xl md:text-6xl tracking-tighter leading-[1.05] mb-8">
                             O espelho está <span className="italic text-[#E35A3D]">esperando.</span>
                         </h2>
                         <p className="text-[#A1A1AA] leading-relaxed mb-12 max-w-md">
-                            Primeira conversa sem compromisso (e sem julgamento — esse fica para a segunda). Escolha seu canal de coragem:
+                            Primeira conversa sem compromisso, em um espaço de sigilo e acolhimento. Escolha como prefere começar:
                         </p>
                         <a
                             href={whatsappLink("Oi, Grazi. Quero agendar uma primeira conversa.")}
@@ -56,7 +56,7 @@ export const Contact = () => {
                         <div className="mt-14 space-y-3 font-mono-accent text-[11px] uppercase tracking-[0.2em] text-[#A1A1AA]">
                             <p>Atendimento online · Brasil inteiro</p>
                             <p>Presencial · consultório</p>
-                            <p>50 min que valem por meses de espiral</p>
+                            <p>Plantão psicológico · vagas em até 24h</p>
                         </div>
                     </Reveal>
                 </div>
@@ -69,7 +69,7 @@ export const Contact = () => {
                             className="border border-[#27272A]/60 bg-[#16161A]/60 backdrop-blur-xl p-8 md:p-12 space-y-8"
                         >
                             <p className="font-mono-accent text-[10px] uppercase tracking-[0.2em] text-[#A1A1AA]">
-                                Ou deixe seus dados — sem compromisso, só conversa
+                                Ou deixe seus dados que retornamos para você
                             </p>
                             <div>
                                 <label htmlFor="lead-name" className="sr-only">Nome</label>
@@ -90,7 +90,7 @@ export const Contact = () => {
                                 <label htmlFor="lead-message" className="sr-only">Mensagem</label>
                                 <textarea id="lead-message" data-testid="contact-message-input" required rows={3}
                                     value={form.message} onChange={set("message")}
-                                    placeholder="O que te trouxe até aqui? (vale a desculpa esfarrapada)" className={`${fieldClass} resize-none`} />
+                                    placeholder="O que te trouxe até aqui?" className={`${fieldClass} resize-none`} />
                             </div>
                             <button
                                 type="submit"
@@ -98,7 +98,7 @@ export const Contact = () => {
                                 data-testid="contact-submit-button"
                                 className="w-full bg-[#E35A3D] text-[#0A0A0C] font-medium py-4 rounded-full hover:bg-[#F2F2F2] hover:-translate-y-1 transition-[background-color,transform] duration-300 disabled:opacity-50 disabled:hover:translate-y-0"
                             >
-                                {loading ? "Enviando..." : "Enviar (sim, é o primeiro passo)"}
+                                {loading ? "Enviando..." : "Enviar mensagem"}
                             </button>
                         </form>
                     </Reveal>

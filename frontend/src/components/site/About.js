@@ -24,7 +24,7 @@ export const About = () => {
                         />
                     </div>
                     <div className="absolute -bottom-6 -right-4 md:-right-8 bg-[#E35A3D] text-[#0A0A0C] px-6 py-4 font-mono-accent text-[11px] uppercase tracking-[0.2em]">
-                        CRP ativo · Sem julgamentos (quase)
+                        CRP ativo · Plantão psicológico
                     </div>
                 </div>
 
@@ -32,8 +32,8 @@ export const About = () => {
                     <Reveal>
                         <Overline className="mb-6">Quem é Grazi Gomes</Overline>
                         <h2 className="font-serif-display font-bold text-3xl md:text-5xl tracking-tighter leading-tight mb-8">
-                            A psicóloga que não vai passar a mão na sua cabeça.
-                            <span className="italic text-[#E35A3D]"> Vai mostrar onde ela dói.</span>
+                            Uma psicóloga que une técnica, escuta e a coragem de
+                            <span className="italic text-[#E35A3D]"> dizer o que precisa ser dito.</span>
                         </h2>
                     </Reveal>
                     <Reveal delay={0.15}>
@@ -44,8 +44,8 @@ export const About = () => {
                                 não deixam você se esconder atrás das próprias desculpas.
                             </p>
                             <p>
-                                Aqui não tem "hmm, entendo" infinito. Tem pergunta incômoda na medida certa, humor quando você
-                                menos espera e um plano concreto para você sair da sessão diferente de como entrou.
+                                Aqui você encontra escuta verdadeira, perguntas certeiras na medida certa e um plano
+                                concreto para sair de cada sessão diferente de como entrou.
                             </p>
                             <p className="font-serif-display italic text-xl text-[#F2F2F2]">
                                 "Meu trabalho não é te deixar confortável. É te deixar livre."
@@ -56,8 +56,8 @@ export const About = () => {
                         <div className="mt-10 grid grid-cols-3 gap-6 border-t border-[#27272A]/60 pt-8">
                             {[
                                 ["10+", "anos de prática"],
-                                ["2", "abordagens afiadas"],
-                                ["0", "paciência p/ desculpa"],
+                                ["2", "abordagens integradas"],
+                                ["24h", "plantão psicológico"],
                             ].map(([num, label]) => (
                                 <div key={label}>
                                     <p className="font-serif-display font-black text-3xl md:text-4xl text-[#E35A3D]">{num}</p>

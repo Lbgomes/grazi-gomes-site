@@ -1,11 +1,11 @@
 import Marquee from "react-fast-marquee";
 
 const items = [
-    "A mudança incomoda",
-    "Você está fugindo?",
-    "Terapia é para quem tem coragem",
-    "Zona de conforto não tem divã",
-    "O problema não é o problema",
+    "Plantão psicológico",
+    "Presença quando você mais precisa",
+    "TCC & Psicologia Provocativa",
+    "Terapia é um ato de coragem",
+    "Cuidar da mente é prioridade",
 ];
 
 export const MarqueeStrip = () => (

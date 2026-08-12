@@ -2,15 +2,15 @@ import { Reveal, Overline } from "./Reveal";
 
 const quotes = [
     {
-        text: "Cheguei querendo validação. Saí querendo mudança. A Grazi riu da minha desculpa favorita na primeira sessão — e ela nunca mais funcionou.",
+        text: "Cheguei querendo validação. Saí querendo mudança. A Grazi me ajudou a enxergar padrões que eu repetia há anos — com leveza e profundidade.",
         author: "M.R., 34 — paciente há 1 ano",
     },
     {
-        text: "É a única hora da semana em que alguém me diz a verdade sem anestesia. Estranhamente, é também a hora que eu mais rio.",
+        text: "É a hora da semana em que alguém me escuta de verdade e me devolve a clareza que eu não conseguia encontrar sozinha.",
         author: "F.A., 28 — paciente há 8 meses",
     },
     {
-        text: "Eu achava que terapia era conversar sobre a infância para sempre. Com TCC e provocação, em 3 meses eu tinha um plano — e coragem de executá-lo.",
+        text: "Eu achava que terapia era conversar sobre a infância para sempre. Com TCC e a abordagem provocativa, em poucos meses eu tinha um plano — e coragem de executá-lo.",
         author: "C.S., 41 — paciente há 2 anos",
     },
 ];
@@ -19,7 +19,7 @@ export const Testimonials = () => (
     <section id="depoimentos" data-testid="testimonials-section" className="relative py-28 md:py-40 bg-[#16161A]/40">
         <div className="max-w-7xl mx-auto px-6 md:px-12">
             <Reveal className="mb-20 max-w-3xl">
-                <Overline className="mb-6">Quem sobreviveu ao divã</Overline>
+                <Overline className="mb-6">Quem já passou por aqui</Overline>
                 <h2 className="font-serif-display font-bold text-3xl md:text-5xl tracking-tighter leading-tight">
                     Depoimentos de quem <span className="italic text-[#E35A3D]">olhou no espelho</span>
                 </h2>

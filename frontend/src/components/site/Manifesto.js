@@ -16,13 +16,13 @@ const chapters = [
     },
     {
         n: "03",
-        title: "Juntas: carinho com consequência",
-        text: "A TCC organiza a bagunça; a provocação impede que você volte a bagunçar. O resultado é um processo terapêutico direto, leve e — aviso importante — viciante no bom sentido.",
+        title: "Juntas: acolhimento com direção",
+        text: "A TCC organiza os pensamentos; a provocação traz leveza e movimento. O resultado é um processo terapêutico direto, humano e profundamente transformador.",
     },
     {
         n: "04",
-        title: "O divã virou poltrona. E ela é sua.",
-        text: "Sessões online ou presenciais, 50 minutos, sigilo absoluto. O único requisito é aparecer como você é. Máscaras ficam na porta — junto com o 'eu sou assim mesmo'.",
+        title: "Um espaço só seu",
+        text: "Sessões online ou presenciais, 50 minutos, sigilo absoluto. O único requisito é aparecer como você é — o resto a gente constrói junto.",
     },
 ];
 
@@ -70,7 +70,7 @@ export const Manifesto = () => (
                             />
                         </div>
                         <p className="font-mono-accent text-[10px] uppercase tracking-[0.2em] text-[#A1A1AA] mt-4">
-                            Fig. 01 — A poltrona onde as desculpas morrem
+                            Fig. 01 — Um espaço reservado para você
                         </p>
                     </Reveal>
                 </div>

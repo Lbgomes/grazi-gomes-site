@@ -140,7 +140,7 @@ export const Quiz = () => {
                                         className="flex-1 flex flex-col"
                                         data-testid="quiz-result"
                                     >
-                                        <Overline className="mb-4">Seu veredito (com carinho)</Overline>
+                                        <Overline className="mb-4">Seu resultado</Overline>
                                         <h3 className="font-serif-display font-black text-3xl md:text-4xl tracking-tight mb-6">
                                             {result.title}
                                         </h3>
@@ -160,7 +160,7 @@ export const Quiz = () => {
                                                 data-testid="quiz-restart-button"
                                                 className="flex items-center justify-center gap-2 border border-[#27272A] px-8 py-4 rounded-full text-[#A1A1AA] hover:text-[#F2F2F2] hover:border-[#E35A3D] transition-[color,border-color] duration-300"
                                             >
-                                                <RotateCcw size={16} /> Refazer (negar o resultado)
+                                                <RotateCcw size={16} /> Refazer o teste
                                             </button>
                                         </div>
                                     </motion.div>

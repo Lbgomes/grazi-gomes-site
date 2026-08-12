@@ -18,12 +18,17 @@ Escolhas do usuário: todas as seções principais; agendamento por formulário 
 ## Implementado (12/08/2026)
 - Hero cinético com reveal linha a linha mascarado + parallax
 - Marquee editorial lento entre seções
-- Sobre Grazi (retrato com parallax, métricas humorísticas)
+- Seção de destaque "Plantão Psicológico" (atendimento prioritário, vagas em até 24h, sessão avulsa, online)
+- Sobre Grazi (retrato com parallax, métricas)
 - Manifesto em 4 capítulos numerados (TCC + Provocativa) com imagem da poltrona
-- Quiz interativo "Descubra por que você precisa de terapia" (4 perguntas, 4 perfis com humor, CTA)
+- Quiz interativo "Descubra por que você precisa de terapia" (4 perguntas, 4 perfis, CTA)
 - Depoimentos editoriais em pull-quotes
 - Contato: formulário salvando leads no MongoDB + botão WhatsApp + FAB flutuante
 - Scroll suave (lenis), reveals em scroll, micro-interações
+
+## Ajustes (12/08/2026 — 2ª iteração)
+- Adicionada seção Plantão Psicológico em destaque após o hero + link no menu + selo no hero e no contato
+- Tom de humor suavizado em todo o site (resultados do quiz, depoimentos, manifesto, formulário) mantendo o design
 
 ## Pendências / Backlog
 - P0: Substituir número de WhatsApp placeholder (5511999999999) em src/components/site/config.js pelo número real da Grazi

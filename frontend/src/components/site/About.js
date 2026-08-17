@@ -2,8 +2,7 @@ import { useRef } from "react";
 import { motion, useScroll, useTransform } from "framer-motion";
 import { Reveal, Overline } from "./Reveal";
 
-const PORTRAIT =
-    "https://images.unsplash.com/photo-1636208640803-6a443f9676d4?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2NzV8MHwxfHNlYXJjaHw0fHxzb3BoaXN0aWNhdGVkJTIwd29tYW4lMjBwb3J0cmFpdCUyMGRhcmslMjBtb29keXxlbnwwfHx8fDE3ODY1NDg4Mzh8MA&ixlib=rb-4.1.0&q=85";
+const PORTRAIT = "/grazi.jpg";
 
 export const About = () => {
     const ref = useRef(null);

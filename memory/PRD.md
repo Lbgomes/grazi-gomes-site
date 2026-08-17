@@ -41,6 +41,9 @@ Escolhas do usuário: todas as seções principais; agendamento por formulário 
 - Plantão Psicológico reduzido a uma faixa discreta (banner fino) após o hero; removido destaque do hero
 - Removida qualquer menção a "papel de vítima" e humor excessivo; Manifesto reescrito com foco em base científica
 
+## Ajustes (17/08/2026 — 5ª iteração)
+- Foto real da Grazi adicionada na seção Sobre (public/grazi.jpg, barras pretas removidas), com tratamento preto e branco que revela a cor no hover, mantendo o visual do design
+
 ## Pendências / Backlog
 - P0: Substituir número de WhatsApp placeholder (5511999999999) em src/components/site/config.js pelo número real da Grazi
 - P0: Substituir foto retrato de stock por foto real da Grazi

@@ -69,9 +69,6 @@ export const Manifesto = () => (
                                 className="w-full h-[460px] object-cover hover:scale-105 transition-transform duration-700"
                             />
                         </div>
-                        <p className="font-mono-accent text-[10px] uppercase tracking-[0.2em] text-[#A1A1AA] mt-4">
-                            Fig. 01 — Um espaço reservado para você
-                        </p>
                     </Reveal>
                 </div>
             </div>

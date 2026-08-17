@@ -19,7 +19,7 @@ export const About = () => {
                             src={PORTRAIT}
                             alt="Retrato da psicóloga Grazi Gomes"
                             data-testid="about-portrait"
-                            className="w-full h-[520px] object-cover grayscale hover:grayscale-0 hover:scale-105 transition-[filter,transform] duration-700 scale-110"
+                            className="w-full h-[520px] object-cover grayscale opacity-80 hover:grayscale-0 hover:opacity-100 hover:scale-105 transition-[filter,transform,opacity] duration-700 scale-110"
                         />
                     </div>
                     <div className="absolute -bottom-6 -right-4 md:-right-8 bg-[#E35A3D] text-[#0A0A0C] px-6 py-4 font-mono-accent text-[11px] uppercase tracking-[0.2em]">

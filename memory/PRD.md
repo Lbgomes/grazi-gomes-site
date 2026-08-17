@@ -47,6 +47,11 @@ Escolhas do usuário: todas as seções principais; agendamento por formulário 
 ## Ajustes (17/08/2026 — 6ª iteração)
 - Removida a seção de Autoavaliação/teste por completo (site, menu e link do hero)
 
+## Ajustes (17/08/2026 — 7ª iteração)
+- WhatsApp real configurado: 55 11 95286-7624 (todos os botões)
+- Foto da Grazi com transparência (opacidade reduzida + P&B, cor no hover)
+- Removida legenda "Fig. 01" abaixo da poltrona no Manifesto
+
 ## Pendências / Backlog
 - P0: Substituir número de WhatsApp placeholder (5511999999999) em src/components/site/config.js pelo número real da Grazi
 - P0: Substituir foto retrato de stock por foto real da Grazi

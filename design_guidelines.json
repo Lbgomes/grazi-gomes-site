@@ -1,0 +1,112 @@
+{
+  "theme": "dark",
+  "typography": {
+    "headings": {
+      "family": "'Playfair Display', serif",
+      "weights": ["400", "700", "900"],
+      "style_notes": "Editorial, elegant, and sharp. Use tight tracking (tracking-tighter) for massive headings. Do NOT use Inter or generic sans for headings."
+    },
+    "body": {
+      "family": "'Manrope', sans-serif",
+      "weights": ["300", "400", "500"],
+      "style_notes": "Clean, sterile contrast to the expressive serif. Use leading-relaxed for legibility."
+    },
+    "accent": {
+      "family": "'JetBrains Mono', monospace",
+      "weights": ["400"],
+      "style_notes": "Use for overlines, step numbers, and micro-copy. Always uppercase with tracking-[0.2em]."
+    }
+  },
+  "colors": {
+    "background": "#0A0A0C",
+    "surface": "#16161A",
+    "surface_glass": "rgba(22, 22, 26, 0.6)",
+    "primary": "#E35A3D",
+    "primary_hover": "#C24930",
+    "text_primary": "#F2F2F2",
+    "text_secondary": "#A1A1AA",
+    "border": "#27272A",
+    "notes": "Palette inspired by Luxury and Swiss Brutalism. Dark, moody, with a striking 'Rust/Orange' accent for provocation. Do NOT use pure black (#000000)."
+  },
+  "layouts": {
+    "hero": "Kinetic, typography-led. Massive serif heading that fills the viewport. Masked line-by-line reveal using Framer Motion. A dark abstract background texture with a subtle grain overlay.",
+    "about": "Asymmetrical split. Image on one side overlapping a dark surface container holding the bio. Use the dark orange accent chair image as a visual metaphor.",
+    "manifesto": "Numbered editorial blocks. Bento-style grid but with wide gaps and overlapping numbers (using the Mono font).",
+    "quiz": "Interactive stacked cards or bento boxes. Each question provokes the user gently. High contrast on the active/selected state. Leads seamlessly to contact.",
+    "testimonials": "Editorial pull-quotes. Large serif quote marks, subtle borders. Not standard generic cards.",
+    "contact": "Minimalist split layout. Left side: Massive typography CTA and WhatsApp link. Right side: Clean form (Lead capture)."
+  },
+  "grids": {
+    "strategy": "MODE A: The 'Tetris' Grid. High tension, asymmetrical. grid-cols-1 md:grid-cols-12.",
+    "gaps": "gap-8 to gap-16 (generous spacing).",
+    "spans": "Mix spans. For example, the image spans 5 columns, while the text spans 6 columns, leaving 1 column empty for breathing room."
+  },
+  "visual_enhancers": {
+    "grain": "MANDATORY. Add a subtle fixed noise/grain overlay (opacity 3-5%) across the entire site to remove the digital flatness. Use CSS or a base64 background.",
+    "marquee": "Use react-fast-marquee. Very slow, elegant serif text: '• A MUDANÇA INCOMODA • VOCÊ ESTÁ FUGINDO? • TERAPIA É PARA QUEM TEM CORAGEM •'. Low contrast text.",
+    "borders": "Use 1px subtle borders (border-border/40) on structural containers to give a technical/editorial feel."
+  },
+  "components": {
+    "buttons": "Pill-shaped or sharp brutalist rectangular. Use the primary color (#E35A3D). Hover state must have a distinct transform and color shift.",
+    "forms": "Use Shadcn Input/Textarea. Customize to have transparent backgrounds, border-b only, or very subtle surface backgrounds.",
+    "accordion": "Minimalist styling. Use for the 'Como funciona' details."
+  },
+  "motion": {
+    "scrolling": "Use lenis for smooth momentum scrolling. This is critical for the premium feel.",
+    "reveals": "Framer motion for text: staggerChildren, y: 50 -> 0, opacity 0 -> 1. Spring physics (stiffness 100, damping 20).",
+    "micro_interactions": "Hover on cards shifts them slightly (-translate-y-2) with a shadow increase. Hover on images scales them slowly (scale-105) inside an overflow-hidden container."
+  },
+  "accessibility": {
+    "contrast": "Text must meet APCA standards. All text over images must use a dark gradient overlay (bg-gradient-to-t from-black/80 to-transparent).",
+    "focus": "All interactive elements must have focus-visible ring.",
+    "aria": "Use aria-hidden='true' for the noise texture and decorative marquee."
+  },
+  "3d_libraries_and_steps": {
+    "recommendation": "Use framer-motion 3D (useScroll, useTransform) for layered parallax on the hero and image sections. No need for full R3F. Framer Motion + CSS Parallax is more reliable for typography-led sites and provides the required awwwards feel."
+  },
+  "image_urls": {
+    "hero_background": {
+      "url": "https://images.pexels.com/photos/7505924/pexels-photo-7505924.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+      "description": "Dark, rippling water/fluid texture to represent the depths of the mind. Put behind the main hero text with low opacity and noise.",
+      "category": "hero"
+    },
+    "about_grazi": {
+      "url": "https://images.unsplash.com/photo-1636208640803-6a443f9676d4?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2NzV8MHwxfHNlYXJjaHw0fHxzb3BoaXN0aWNhdGVkJTIwd29tYW4lMjBwb3J0cmFpdCUyMGRhcmslMjBtb29keXxlbnwwfHx8fDE3ODY1NDg4Mzh8MA&ixlib=rb-4.1.0&q=85",
+      "description": "Sophisticated, moody portrait of a woman. Use as the representation of Grazi. Apply a grayscale or desaturated filter via CSS.",
+      "category": "about"
+    },
+    "metaphor_chair": {
+      "url": "https://images.unsplash.com/photo-1769255119622-1bd8e49ff35c?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjAzMzl8MHwxfHNlYXJjaHwxfHxtaW5pbWFsaXN0JTIwbW9kZXJuJTIwY2hhaXIlMjBkYXJrfGVufDB8fHx8MTc4NjU0ODgzOHww&ixlib=rb-4.1.0&q=85",
+      "description": "Modern orange armchair on dark background. Symbol of the 'provocative therapy couch'. Use in the manifesto/quiz section.",
+      "category": "content"
+    }
+  },
+  "instructions_to_main_agent": [
+    "Install required dependencies: framer-motion, @studio-freight/lenis (or lenis), react-fast-marquee, lucide-react, sonner.",
+    "Add 'Playfair Display', 'Manrope', and 'JetBrains Mono' via Google Fonts in index.html.",
+    "Implement a global noise overlay (a fixed div with pointer-events-none and a base64 noise background image).",
+    "Hero Section: Build a cinematic text reveal using Framer Motion. Text should read 'A terapia não é para todos. Apenas para quem tem coragem de olhar no espelho.'",
+    "Quiz Section 'Descubra por que você precisa de terapia': Create an interactive component with 3-4 questions with witty answers (e.g., 'Você foge de conflitos ou cria eles na sua cabeça?'). Use state to show a provocative conclusion that leads to the booking CTA.",
+    "About Grazi: Emphasize the 'TCC + Psicologia Provocativa' approach. Make it sound sophisticated but sharp. Use the provided sophisticated woman portrait.",
+    "Forms: Use the Shadcn UI Form components to capture Lead (Name, Email, Challenge) and mock saving it. Also add a fixed floating WhatsApp button.",
+    "Marquee: Place a slow moving Marquee separating sections.",
+    "Never use generic centered 'Bootstrap' style layouts. Use asymmetric grids.",
+    "CRITICAL: Generate .js component files, not .tsx. You have .js files.",
+    "Add data-testid attributes to all buttons, inputs, and major sections."
+  ],
+  "UNIVERSAL GUIDELINES FOR MAIN AGENT": [
+    "You tend to converge toward generic, 'on distribution' outputs. Make creative, distinctive frontends that surprise and delight.",
+    "Dark colors look good when used independently without gradients. DO NOT use dark colors as gradients.",
+    "Don't make generic centered layouts, simplistic gradients, and uniform styling.",
+    "Create depth through layered design elements with z-index hierarchy.",
+    "Use glass-morphism effects with backdrop filters (12-24px blur).",
+    "You MUST NOT apply universal transition. Eg: transition: all. It breaks animations.",
+    "You MUST NOT center align the app container, ie do not add .App { text-align: center; } in the css file.",
+    "Always use modern button styles like pill-shaped, or sharp button with interaction animations & color relevant to the app style.",
+    "NEVER use AI assistant Emoji characters like 🤖🧠💭💡🔮🎯 etc for icons. Use Lucide icons.",
+    "Every interaction needs micro-animations - hover states, transitions, parallax effects, and entrance animations.",
+    "Use 2-3x more spacing than feels comfortable. Cramped designs look cheap.",
+    "Prioritize using pre-existing components from src/components/ui when applicable.",
+    "Use sonner for toasts. Do NOT use transparent backgrounds on dropdowns or overlays."
+  ]
+}

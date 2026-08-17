@@ -13,9 +13,6 @@ import { Testimonials } from "@/components/site/Testimonials";
 import { Contact } from "@/components/site/Contact";
 import { Footer } from "@/components/site/Footer";
 import { WhatsAppFab } from "@/components/site/WhatsAppFab";
-import { Investimento } from "@/components/site/Investimento";
-import PaymentSuccess from "@/components/site/PaymentSuccess";
-import PaymentCancel from "@/components/site/PaymentCancel";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 function Landing() {
@@ -54,7 +51,6 @@ function Landing() {
                 <About />
                 <Manifesto />
                 <Especialidades />
-                <Investimento />
                 <Testimonials />
                 <Contact />
             </main>
@@ -70,8 +66,6 @@ function App() {
         <BrowserRouter>
             <Routes>
                 <Route path="/" element={<Landing />} />
-                <Route path="/payment/success" element={<PaymentSuccess />} />
-                <Route path="/payment/cancel" element={<PaymentCancel />} />
             </Routes>
         </BrowserRouter>
     );

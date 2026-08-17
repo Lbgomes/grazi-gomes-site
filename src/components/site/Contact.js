@@ -1,11 +1,8 @@
 import { useState } from "react";
-import axios from "axios";
 import { toast } from "sonner";
 import { MessageCircle } from "lucide-react";
 import { Reveal, Overline } from "./Reveal";
 import { whatsappLink } from "./config";
-
-const API = `${process.env.REACT_APP_BACKEND_URL}/api`;
 
 const initial = { name: "", email: "", whatsapp: "", message: "" };
 
@@ -14,22 +11,21 @@ const fieldClass =
 
 export const Contact = () => {
     const [form, setForm] = useState(initial);
-    const [loading, setLoading] = useState(false);
 
     const set = (k) => (e) => setForm({ ...form, [k]: e.target.value });
 
-    const submit = async (e) => {
+    const submit = (e) => {
         e.preventDefault();
-        setLoading(true);
-        try {
-            await axios.post(`${API}/leads`, form);
-            toast.success("Mensagem enviada. A Grazi responde em breve — prepare-se.");
-            setForm(initial);
-        } catch (err) {
-            toast.error("Algo deu errado. Tente pelo WhatsApp, ele não trava.");
-        } finally {
-            setLoading(false);
-        }
+        const lines = [
+            `Oi, Grazi! Meu nome é ${form.name}.`,
+            `E-mail: ${form.email}`,
+        ];
+        if (form.whatsapp) lines.push(`WhatsApp: ${form.whatsapp}`);
+        lines.push("", form.message);
+
+        window.open(whatsappLink(lines.join("\n")), "_blank", "noopener,noreferrer");
+        toast.success("Abrindo o WhatsApp com sua mensagem...");
+        setForm(initial);
     };
 
     return (
@@ -94,11 +90,10 @@ export const Contact = () => {
                             </div>
                             <button
                                 type="submit"
-                                disabled={loading}
                                 data-testid="contact-submit-button"
-                                className="w-full bg-[#E35A3D] text-[#0A0A0C] font-medium py-4 rounded-full hover:bg-[#F2F2F2] hover:-translate-y-1 transition-[background-color,transform] duration-300 disabled:opacity-50 disabled:hover:translate-y-0"
+                                className="w-full bg-[#E35A3D] text-[#0A0A0C] font-medium py-4 rounded-full hover:bg-[#F2F2F2] hover:-translate-y-1 transition-[background-color,transform] duration-300"
                             >
-                                {loading ? "Enviando..." : "Enviar mensagem"}
+                                Enviar pelo WhatsApp
                             </button>
                         </form>
                     </Reveal>

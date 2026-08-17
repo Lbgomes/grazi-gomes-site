@@ -11,8 +11,8 @@ Escolhas do usuário: todas as seções principais; agendamento por formulário 
 - Grazi (recebe os leads por e-mail/WhatsApp coletados no site)
 
 ## Arquitetura
-- Frontend: React + Tailwind + framer-motion + lenis + react-fast-marquee (one-page landing pt-BR)
-- Backend: FastAPI, rotas /api/leads (POST/GET) persistindo em MongoDB
+- Frontend: React + Tailwind + framer-motion + lenis + react-fast-marquee (one-page landing pt-BR), site 100% estático
+- Sem backend: agendamento e contato feitos inteiramente via WhatsApp
 - Tema dark editorial (Playfair Display / Manrope / JetBrains Mono, acento #E35A3D), grain overlay, grid assimétrico
 
 ## Implementado (12/08/2026)
@@ -67,15 +67,17 @@ Escolhas do usuário: todas as seções principais; agendamento por formulário 
 ## Ajustes (17/08/2026 — 10ª iteração)
 - Selo de verificação discreto no topo (navbar), ao lado do nome: CRP 183637/06 · BPS 687171 com ícone de escudo
 
+## Ajustes (17/08/2026 — 11ª iteração)
+- Removidos por completo: backend (FastAPI/MongoDB), integração Stripe e a seção "Investimento" (pagamento por cartão), incluindo as páginas /payment/success e /payment/cancel
+- Formulário de Contato deixou de enviar para uma API própria: agora monta a mensagem digitada e abre o WhatsApp com o texto pré-preenchido
+- Site voltou a ser 100% estático (React puro), sem nenhuma dependência de servidor — agendamento e contato acontecem inteiramente pelo WhatsApp
+- Removidos também todos os resquícios da plataforma Emergent (scripts de analytics/visual-edit, dependências, metadados de job/cron)
+
 ## Pendências / Backlog
-- P0: Substituir número de WhatsApp placeholder (5511999999999) em src/components/site/config.js pelo número real da Grazi
-- P0: Substituir foto retrato de stock por foto real da Grazi
-- P1: Notificação de novos leads por e-mail (Resend)
-- P1: Área administrativa para visualizar leads
+- P1: Notificação de novos leads por e-mail (Resend) — requer decidir uma nova forma de captar leads, já que não há mais backend
 - P2: Blog/artigos, FAQ, página de agendamento com calendário
 - P2: SEO/avaliação Google, meta tags sociais personalizadas
 
 ## Próximas tarefas
-1. Receber número de WhatsApp real e foto real
-2. Ativar notificação de leads por e-mail
-3. Painel simples de leads
+1. Confirmar que o número de WhatsApp (55 11 95286-7624) é o definitivo em todos os pontos de contato
+2. Avaliar se vale reintroduzir alguma forma de pagamento online mais simples (ex: link de pagamento do próprio WhatsApp/Instagram) caso necessário no futuro

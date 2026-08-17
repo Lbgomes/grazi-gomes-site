@@ -73,11 +73,11 @@ export const Hero = () => {
                         Aceito o desafio
                     </a>
                     <a
-                        href="#teste"
+                        href="#atendimentos"
                         data-testid="hero-quiz-link"
                         className="text-[#A1A1AA] hover:text-[#F2F2F2] transition-colors duration-300 text-base border-b border-[#27272A] hover:border-[#E35A3D] pb-1"
                     >
-                        Conheça a autoavaliação ↓
+                        Conheça as áreas de atendimento ↓
                     </a>
                 </motion.div>
             </motion.div>

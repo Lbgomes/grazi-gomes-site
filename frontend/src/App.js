@@ -7,7 +7,6 @@ import { Hero } from "@/components/site/Hero";
 import { MarqueeStrip } from "@/components/site/MarqueeStrip";
 import { About } from "@/components/site/About";
 import { Manifesto } from "@/components/site/Manifesto";
-import { Quiz } from "@/components/site/Quiz";
 import { Plantao } from "@/components/site/Plantao";
 import { Especialidades } from "@/components/site/Especialidades";
 import { Testimonials } from "@/components/site/Testimonials";
@@ -51,7 +50,6 @@ function App() {
                 <About />
                 <Manifesto />
                 <Especialidades />
-                <Quiz />
                 <Testimonials />
                 <Contact />
             </main>

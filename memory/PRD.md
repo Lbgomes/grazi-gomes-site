@@ -52,6 +52,15 @@ Escolhas do usuário: todas as seções principais; agendamento por formulário 
 - Foto da Grazi com transparência (opacidade reduzida + P&B, cor no hover)
 - Removida legenda "Fig. 01" abaixo da poltrona no Manifesto
 
+## Ajustes (17/08/2026 — 8ª iteração)
+- Pagamentos via Stripe (modo teste): seção "Investimento" com Sessão Avulsa R$250, Pacote Mensal R$900 e Plantão R$350
+- Checkout hospedado Stripe (cartão + Pix), páginas /payment/success e /payment/cancel
+- Backend: POST /api/payments/checkout, GET /api/payments/status/{id}, POST /api/stripe/webhook
+- Webhook registrado na conta sandbox (todos os eventos)
+- Removidos travessões dos textos visíveis do site
+- Conta sandbox Stripe "grazi-gomes-terapia" (país GB). Para produção: clicar Connect with Stripe no Deploy.
+- PENDENTE: ajustar valores reais (rodar novamente backend/setup_stripe.py após editar CATALOG)
+
 ## Pendências / Backlog
 - P0: Substituir número de WhatsApp placeholder (5511999999999) em src/components/site/config.js pelo número real da Grazi
 - P0: Substituir foto retrato de stock por foto real da Grazi

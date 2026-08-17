@@ -43,7 +43,7 @@ export const About = () => {
                                 trazem clareza e movimento para quem se sente estagnado.
                             </p>
                             <p>
-                                É também <strong className="text-[#F2F2F2]">sexóloga e terapeuta de casais</strong> — porque a vida afetiva
+                                É também <strong className="text-[#F2F2F2]">sexóloga e terapeuta de casais</strong>. A vida afetiva
                                 e a intimidade merecem o mesmo cuidado técnico e o mesmo espaço de escuta sem julgamentos.
                             </p>
                             <p>

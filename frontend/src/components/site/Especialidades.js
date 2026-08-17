@@ -12,7 +12,7 @@ const areas = [
         icon: HeartHandshake,
         n: "02",
         title: "Terapia de Casais",
-        text: "Para casais que querem sair do ciclo de brigas, silêncios e mágoas acumuladas. Um espaço neutro para reconstruir diálogo, confiança e intimidade — ou decidir o futuro com clareza.",
+        text: "Para casais que querem sair do ciclo de brigas, silêncios e mágoas acumuladas. Um espaço neutro para reconstruir diálogo, confiança e intimidade, ou decidir o futuro com clareza.",
     },
     {
         icon: Sparkles,
@@ -31,7 +31,7 @@ export const Especialidades = () => (
                     Para você, para o casal e para <span className="italic text-[#E35A3D]">a intimidade</span>
                 </h2>
                 <p className="text-[#A1A1AA] leading-relaxed mt-8">
-                    Especializações em Terapia Cognitivo-Comportamental, Sexologia Clínica e Terapia de Casais — formação no Brasil,
+                    Especializações em Terapia Cognitivo-Comportamental, Sexologia Clínica e Terapia de Casais. Formação no Brasil,
                     pós-graduação em Portugal e membership na British Psychological Society (BPS), Londres.
                 </p>
             </Reveal>

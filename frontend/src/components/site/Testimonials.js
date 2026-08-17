@@ -2,16 +2,16 @@ import { Reveal, Overline } from "./Reveal";
 
 const quotes = [
     {
-        text: "Cheguei querendo validação. Saí querendo mudança. A Grazi me ajudou a enxergar padrões que eu repetia há anos — com leveza e profundidade.",
-        author: "M.R., 34 — paciente há 1 ano",
+        text: "Cheguei querendo validação. Saí querendo mudança. A Grazi me ajudou a enxergar padrões que eu repetia há anos, com leveza e profundidade.",
+        author: "M.R., 34, paciente há 1 ano",
     },
     {
         text: "É a hora da semana em que alguém me escuta de verdade e me devolve a clareza que eu não conseguia encontrar sozinha.",
-        author: "F.A., 28 — paciente há 8 meses",
+        author: "F.A., 28, paciente há 8 meses",
     },
     {
-        text: "Eu achava que terapia era conversar sobre a infância para sempre. Com TCC e a abordagem provocativa, em poucos meses eu tinha um plano — e coragem de executá-lo.",
-        author: "C.S., 41 — paciente há 2 anos",
+        text: "Eu achava que terapia era conversar sobre a infância para sempre. Com TCC e a abordagem provocativa, em poucos meses eu tinha um plano e a coragem de executá-lo.",
+        author: "C.S., 41, paciente há 2 anos",
     },
 ];
 

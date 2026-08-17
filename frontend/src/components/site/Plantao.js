@@ -6,7 +6,7 @@ export const Plantao = () => (
         <div className="max-w-7xl mx-auto px-6 md:px-12 py-8 flex flex-col md:flex-row md:items-center gap-5 md:gap-10">
             <Overline className="shrink-0">Plantão Psicológico</Overline>
             <p className="text-[#A1A1AA] text-sm md:text-base flex-1">
-                Atendimento pontual para situações que não podem esperar — sessões avulsas, online, com vagas em até 24h.
+                Atendimento pontual para situações que não podem esperar. Sessões avulsas, online, com vagas em até 24h.
             </p>
             <a
                 href={whatsappLink("Oi, Grazi. Preciso de um atendimento no plantão psicológico.")}

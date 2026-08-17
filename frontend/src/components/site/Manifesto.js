@@ -12,7 +12,7 @@ const chapters = [
     {
         n: "02",
         title: "Psicologia Provocativa: leveza com propósito",
-        text: "Desenvolvida na Europa, a Psicologia Provocativa utiliza o humor e o paradoxo como ferramentas técnicas para ampliar a consciência e mobilizar recursos internos — sempre com ética, respeito e acolhimento.",
+        text: "Desenvolvida na Europa, a Psicologia Provocativa utiliza o humor e o paradoxo como ferramentas técnicas para ampliar a consciência e mobilizar recursos internos, sempre com ética, respeito e acolhimento.",
     },
     {
         n: "03",
@@ -22,7 +22,7 @@ const chapters = [
     {
         n: "04",
         title: "Um espaço só seu",
-        text: "Sessões online ou presenciais, 50 minutos, sigilo absoluto. O único requisito é aparecer como você é — o resto a gente constrói junto.",
+        text: "Sessões online ou presenciais, 50 minutos, sigilo absoluto. O único requisito é aparecer como você é. O resto a gente constrói junto.",
     },
 ];
 
@@ -64,7 +64,7 @@ export const Manifesto = () => (
                         <div className="overflow-hidden border border-[#27272A]/60">
                             <img
                                 src={CHAIR}
-                                alt="Poltrona laranja em fundo escuro — o divã moderno"
+                                alt="Poltrona laranja em fundo escuro"
                                 data-testid="manifesto-chair-image"
                                 className="w-full h-[460px] object-cover hover:scale-105 transition-transform duration-700"
                             />

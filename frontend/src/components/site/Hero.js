@@ -39,7 +39,7 @@ export const Hero = () => {
                     className="font-mono-accent text-xs uppercase tracking-[0.2em] text-[#E35A3D] mb-10"
                     data-testid="hero-overline"
                 >
-                    Grazi Gomes — Psicóloga Clínica · CRP Brasil · BPS Londres
+                    Grazi Gomes · Psicóloga Clínica · CRP Brasil · BPS Londres
                 </motion.p>
 
                 <h1 className="font-serif-display font-black text-4xl sm:text-6xl lg:text-7xl xl:text-8xl leading-[1.02] tracking-tighter max-w-5xl">

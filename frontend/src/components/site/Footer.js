@@ -12,7 +12,7 @@ export const Footer = () => (
                 </p>
             </div>
             <p className="font-mono-accent text-[10px] uppercase tracking-[0.2em] text-[#A1A1AA]/60">
-                © {new Date().getFullYear()} — Feito para quem tem coragem
+                © {new Date().getFullYear()} · Feito para quem tem coragem
             </p>
             <a
                 href={whatsappLink("Oi, Grazi!")}

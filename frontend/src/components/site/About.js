@@ -48,8 +48,8 @@ export const About = () => {
                             </p>
                             <p>
                                 Formada no Brasil e <strong className="text-[#F2F2F2]">pós-graduada em Portugal</strong>, com registro
-                                ativo no <strong className="text-[#F2F2F2]">CRP</strong> e membership na
-                                <strong className="text-[#F2F2F2]"> British Psychological Society (BPS), em Londres</strong>.
+                                ativo no <strong className="text-[#F2F2F2]">CRP 183637/06</strong> e membership na
+                                <strong className="text-[#F2F2F2]"> British Psychological Society (BPS 687171), em Londres</strong>.
                             </p>
                             <p>
                                 Aqui você encontra escuta verdadeira, perguntas certeiras na medida certa e um plano
@@ -63,8 +63,8 @@ export const About = () => {
                     <Reveal delay={0.3}>
                         <div className="mt-10 grid grid-cols-3 gap-6 border-t border-[#27272A]/60 pt-8">
                             {[
-                                ["CRP", "registro ativo · Brasil"],
-                                ["BPS", "membro · Londres"],
+                                ["CRP", "183637/06 · Brasil"],
+                                ["BPS", "687171 · Londres"],
                                 ["PT", "pós-graduação · Portugal"],
                             ].map(([num, label]) => (
                                 <div key={label}>

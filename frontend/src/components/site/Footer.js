@@ -8,7 +8,7 @@ export const Footer = () => (
                     Grazi <span className="text-[#E35A3D] italic">Gomes</span>
                 </p>
                 <p className="font-mono-accent text-[10px] uppercase tracking-[0.2em] text-[#A1A1AA] mt-2">
-                    Psicóloga Clínica · CRP Brasil · BPS Londres
+                    Psicóloga Clínica · CRP 183637/06 · BPS 687171
                 </p>
             </div>
             <p className="font-mono-accent text-[10px] uppercase tracking-[0.2em] text-[#A1A1AA]/60">

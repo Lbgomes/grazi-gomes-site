@@ -61,6 +61,9 @@ Escolhas do usuário: todas as seções principais; agendamento por formulário 
 - Conta sandbox Stripe "grazi-gomes-terapia" (país GB). Para produção: clicar Connect with Stripe no Deploy.
 - PENDENTE: ajustar valores reais (rodar novamente backend/setup_stripe.py após editar CATALOG)
 
+## Ajustes (17/08/2026 — 9ª iteração)
+- Números de registro adicionados: CRP 183637/06 e BPS 687171 (seção Sobre, métricas e rodapé)
+
 ## Pendências / Backlog
 - P0: Substituir número de WhatsApp placeholder (5511999999999) em src/components/site/config.js pelo número real da Grazi
 - P0: Substituir foto retrato de stock por foto real da Grazi

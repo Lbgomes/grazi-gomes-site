@@ -64,6 +64,9 @@ Escolhas do usuário: todas as seções principais; agendamento por formulário 
 ## Ajustes (17/08/2026 — 9ª iteração)
 - Números de registro adicionados: CRP 183637/06 e BPS 687171 (seção Sobre, métricas e rodapé)
 
+## Ajustes (17/08/2026 — 10ª iteração)
+- Selo de verificação discreto no topo (navbar), ao lado do nome: CRP 183637/06 · BPS 687171 com ícone de escudo
+
 ## Pendências / Backlog
 - P0: Substituir número de WhatsApp placeholder (5511999999999) em src/components/site/config.js pelo número real da Grazi
 - P0: Substituir foto retrato de stock por foto real da Grazi

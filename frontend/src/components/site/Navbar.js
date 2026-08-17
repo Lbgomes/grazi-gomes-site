@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
+import { ShieldCheck } from "lucide-react";
 import { whatsappLink } from "./config";
 
 const links = [
@@ -35,6 +36,10 @@ export const Navbar = () => {
                 <a href="#top" data-testid="nav-logo" className="font-serif-display text-xl font-bold tracking-tight">
                     Grazi <span className="text-[#E35A3D] italic">Gomes</span>
                 </a>
+                <div className="hidden lg:flex items-center gap-2 font-mono-accent text-[10px] uppercase tracking-[0.2em] text-[#A1A1AA] border border-[#27272A]/60 rounded-full px-4 py-1.5" data-testid="nav-verification-badge">
+                    <ShieldCheck size={13} className="text-[#E35A3D]" />
+                    CRP 183637/06 · BPS 687171
+                </div>
                 <div className="hidden md:flex items-center gap-8">
                     {links.map((l) => (
                         <a

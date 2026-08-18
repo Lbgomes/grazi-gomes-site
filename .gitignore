@@ -11,6 +11,9 @@
 *.sln.docstates
 *.env
 
+# CRA/Netlify build output
+/build/
+
 # User-specific files (MonoDevelop/Xamarin Studio)
 *.userprefs
 
